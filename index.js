@@ -22,7 +22,7 @@ app.post("/send", async (req, res) => {
           from: "onboarding@resend.dev",  // Debe ser un dominio verificado
           to: ["yoniermosquera55@gmail.com"],  // Tu correo donde recibirás el mensaje
           reply_to: email,  // Permite responder directamente al usuario
-          subject: "Nuevo mensaje de contacto",
+          subject: "Nuevo mensaje de contacto: " + email,
           html: `
               <p><strong>Correo del remitente:</strong> ${email}</p>
               <p><strong>Mensaje:</strong> ${mensaje}</p>
